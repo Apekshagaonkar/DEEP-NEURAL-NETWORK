@@ -3,5 +3,7 @@ Movie Recommendation System- training a neural model to recommend movies to a us
 paper refered:
 https://arxiv.org/pdf/1708.05031.pdf 
 
-The accuracy is not very great because we have trained it on very small dataset.It can work better if trained with more dataset.
+The dataset we trained our model with is in the short_dataset.txt file.
+Used Neural collaborative filtering framework
+
 
