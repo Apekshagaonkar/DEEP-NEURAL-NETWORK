@@ -1,0 +1,32 @@
+References
+https://software.intel.com/en-us/openvino-toolkit/choose-download
+https://software.intel.com/en-us/openvino-toolkit/choose-download/free-download-windows
+https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_windows.html
+
+
+After having Intel openvino setup ready
+And your .pb file of your neural network ready
+
+
+#model optimizing
+[1] cd C:\Program Files (x86)\IntelSWTools\openvino_2019.3.379\deployment_tools\model_optimizer
+
+converts the .pb file created from jupyter notebook into .xml and .bin file
+
+[2] python mo_tf.py --input_model "path of .pb file" --output_dir "destination path for .xml" --model_name acute_infract_predict --input_shape [1,32,32,3]
+
+#set variables
+[3] cd C:\Program Files (x86)\IntelSWTools\openvino\bin
+[4] setupvars.bat
+
+#for running inference file
+[5] pyinstaller -F mri_predict.py
+	#exe file will be in dist file in acute_infract_infer.py directory
+
+# add add .exe file in same dir as .xml
+# go to dir which contains both .exe and .xml 
+
+[6] python mri_predict.py -i "path to inference image" -d "CPU" -m "path to .xml file" 2> warning.txt
+OR
+[ ] mri_predict.exe -i "path to inference image" -d "CPU" -m "path to .xml file"
+
