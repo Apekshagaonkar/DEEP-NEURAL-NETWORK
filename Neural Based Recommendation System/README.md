@@ -1,14 +1,53 @@
-# NCF-Movie Recommendation System training a neural model to recommend movies to a user based on his recent ratings for movies she/he has watched.
+# NCF-Movie Recommendation System
 
-paper refered:
-https://arxiv.org/pdf/1708.05031.pdf 
+## PROBLEM STATEMENT:
+Our aim is to predict the rating of the movie which is not rated by the user
 
-The dataset we trained our model with is in the short_dataset.txt file.
+## PAPER REFERED
+This project is implementation of [this paper](https://arxiv.org/pdf/1708.05031.pdf) 
 
-Used Neural collaborative filtering framework
-It was deep learning first layer would extract features.
-The movies vector which is close to user vector in higher dimension(based on number of neuron) will have higher rating compared to one far from it.
-And the bias for each movie will depend on the overall rating like if the movie is very successful or fail 
-And the bias for each user depends on his average reaction to all movies like if he usually gives higher rating or gives lower rating to movie.
+## DATA:
+We will be using a The Movie dataset(https://www.kaggle.com/rounakbanik/the-movies-dataset) from the Kaggle platform which has a very good collection of datasets.
 
+### License : [LICENSE](https://creativecommons.org/publicdomain/zero/1.0/)
 
+### FEATURES Used in the project
+
+ratings_small.csv
+ - User id
+ - Movie id
+ - Rating
+ - Timestamp
+ 
+movies_metadata.csv
+ - Movie id
+ - Movie name
+ 
+## REQUIREMENT 
+
+MATLAB IMPLIMENTATION
+- [MATLAB](https://www.mathworks.com)
+
+PYTHON IMPLEMETATION
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [keras](https://www.tensorflow.org/guide/keras)
+
+## STEPS :
+
+### PYTHON IMPLEMENTATION
+
+- In a terminal or command window, navigate to the top-level project directory
+PYTHON IMPLEMENTATION/ (that contains this README) and run one of the following
+commands:
+- ipython notebook Neural collaborative filter -Recommender system.ipynb
+Or
+- jupyter notebook Neural collaborative filter -Recommender system.ipynb
+- This will open the Jupyter Notebook software and project file in your browser.
+
+### MATLAB IMPLEMENTATION
+
+- In a matlab terminal or command window, navigate to the top-level project directory
+Neural Based Recommendation System/ and run the **random.m** file
