@@ -2,7 +2,7 @@
 
 ## PROBLEM STATEMENT:
 Our aim is to classify the image into classes where each class indicates the region of infection of
-Acute infarct disease.
+Acute infarct disease in an optimised way using a Hardware Accelerator Openvino toolkit Provided by Intel.
 
 ## DATA:
 Source of dataset: Prof Kousik Sankar
