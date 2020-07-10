@@ -1,7 +1,8 @@
-# NCF-Movie Recommendation System
+# Neural Collaborative Filtering-Movie Recommendation System
 
 ## PROBLEM STATEMENT:
-Our aim is to predict the rating of the movie which is not rated by the user
+Neural collaborative filtering(NCF), is a deep learning based framework for making reccomendations.The key idea is to learn user-item interactions using neural network
+and predict the rating of unrated movies.
 
 ## PAPER REFERED
 This project is implementation of [this paper](https://arxiv.org/pdf/1708.05031.pdf) 
